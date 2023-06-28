@@ -15,10 +15,8 @@ from basicsr.utils.download_util import (
 )
 
 if shared.cmd_opts.depth_maps_dir:
-    print("custom path found")
     maps_path = shared.cmd_opts.depth_maps_dir
 else:
-    print("use default path")
     maps_path = os.path.join(scripts.basedir(), "maps")
 types = list(os.walk(maps_path))[0][1]
 
